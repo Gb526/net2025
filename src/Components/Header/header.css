@@ -1,0 +1,82 @@
+/* Outer container to position the header */
+.header_outer_container {
+  width: 100%;
+  background-color: black;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  padding: 10px 0;
+}
+
+/* Main header container */
+.header_container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 50px;
+}
+
+/* Left side (Netflix Logo + Navigation Links) */
+.header_left ul {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.header_left ul li {
+  margin-right: 20px;
+  color: white;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.header_left ul li:hover {
+  color: red;
+}
+
+/* Logo styling */
+.header_left img {
+  width: 100px;
+}
+
+/* Right side (Icons) */
+.header_right ul {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.header_right ul li {
+  margin-left: 15px;
+  color: white;
+  font-size: 24px;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.header_right ul li:hover {
+  color: red;
+}
+
+/* Make the header responsive */
+@media (max-width: 768px) {
+  .header_container {
+    padding: 0 20px;
+  }
+
+  .header_left ul li {
+    font-size: 14px;
+    margin-right: 10px;
+  }
+
+  .header_right ul li {
+    font-size: 20px;
+  }
+}
